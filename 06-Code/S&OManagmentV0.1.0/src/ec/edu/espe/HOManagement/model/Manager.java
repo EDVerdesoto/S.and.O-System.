@@ -1,9 +1,13 @@
 package ec.edu.espe.HOManagement.model;
 
+import ec.edu.espe.HOManagement.view.ImputMenu;
+
 /**
  *
  * @author Code Warriors, DCCO-ESPE
  */
 public class Manager {
-    //TODO hacer aqui el ingreso de datos y el main
+    public static void main(String[] args) {
+        ImputMenu.menu();
+    }
 }
