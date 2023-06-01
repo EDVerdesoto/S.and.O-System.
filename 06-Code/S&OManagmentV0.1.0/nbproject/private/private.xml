@@ -3,16 +3,15 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/Users/VerdesotoDamian/Documents/NetBeansProjects/S&amp;OManagmentV0.1.0/src/ec/edu/espe/HOManagement/model/ProductItem.java</file>
-            <file>file:/C:/Users/VerdesotoDamian/Documents/NetBeansProjects/S&amp;OManagmentV0.1.0/src/ec/edu/espe/HOManagement/view/ImputMenu.java</file>
-            <file>file:/C:/Users/VerdesotoDamian/Documents/NetBeansProjects/S&amp;OManagmentV0.1.0/src/ec/edu/espe/HOManagement/model/RevenueCalculator.java</file>
-            <file>file:/C:/Users/VerdesotoDamian/Documents/NetBeansProjects/S&amp;OManagmentV0.1.0/src/ec/edu/espe/HOManagement/model/Costumer.java</file>
-            <file>file:/C:/Users/VerdesotoDamian/Documents/NetBeansProjects/S&amp;OManagmentV0.1.0/src/ec/edu/espe/HOManagement/model/Registration.java</file>
-            <file>file:/C:/Users/VerdesotoDamian/Documents/NetBeansProjects/S&amp;OManagmentV0.1.0/src/ec/edu/espe/HOManagement/view/StoreInventory.java</file>
-            <file>file:/C:/Users/VerdesotoDamian/Documents/NetBeansProjects/S&amp;OManagmentV0.1.0/src/ec/edu/espe/HOManagement/model/Manager.java</file>
-            <file>file:/C:/Users/VerdesotoDamian/Documents/NetBeansProjects/S&amp;OManagmentV0.1.0/src/ec/edu/espe/HOManagement/model/Report.java</file>
-            <file>file:/C:/Users/VerdesotoDamian/Documents/NetBeansProjects/S&amp;OManagmentV0.1.0/src/ec/edu/espe/HOManagement/model/ToSellItem.java</file>
-            <file>file:/C:/Users/VerdesotoDamian/Documents/NetBeansProjects/S&amp;OManagmentV0.1.0/src/ec/edu/espe/HOManagement/model/Distributor.java</file>
+            <file>file:/C:/Users/leone/OneDrive/Escritorio/Tareas2d/POO/T06_SandO-System/06-Code/S&amp;OManagmentV0.1.0/src/ec/edu/espe/HOManagement/model/ToSellItem.java</file>
+            <file>file:/C:/Users/leone/OneDrive/Escritorio/Tareas2d/POO/T06_SandO-System/06-Code/S&amp;OManagmentV0.1.0/src/ec/edu/espe/HOManagement/model/Manager.java</file>
+            <file>file:/C:/Users/leone/OneDrive/Escritorio/Tareas2d/POO/T06_SandO-System/06-Code/S&amp;OManagmentV0.1.0/src/ec/edu/espe/HOManagement/view/StoreInventory.java</file>
+            <file>file:/C:/Users/leone/OneDrive/Escritorio/Tareas2d/POO/T06_SandO-System/06-Code/S&amp;OManagmentV0.1.0/src/ec/edu/espe/HOManagement/model/Distributor.java</file>
+            <file>file:/C:/Users/leone/OneDrive/Escritorio/Tareas2d/POO/T06_SandO-System/06-Code/S&amp;OManagmentV0.1.0/src/ec/edu/espe/HOManagement/view/ImputMenu.java</file>
+            <file>file:/C:/Users/leone/OneDrive/Escritorio/Tareas2d/POO/T06_SandO-System/06-Code/S&amp;OManagmentV0.1.0/src/ec/edu/espe/HOManagement/model/Registration.java</file>
+            <file>file:/C:/Users/leone/OneDrive/Escritorio/Tareas2d/POO/T06_SandO-System/06-Code/S&amp;OManagmentV0.1.0/src/ec/edu/espe/HOManagement/model/Report.java</file>
+            <file>file:/C:/Users/leone/OneDrive/Escritorio/Tareas2d/POO/T06_SandO-System/06-Code/S&amp;OManagmentV0.1.0/src/ec/edu/espe/HOManagement/model/RevenueCalculator.java</file>
+            <file>file:/C:/Users/leone/OneDrive/Escritorio/Tareas2d/POO/T06_SandO-System/06-Code/S&amp;OManagmentV0.1.0/src/ec/edu/espe/HOManagement/model/Costumer.java</file>
         </group>
     </open-files>
 </project-private>
