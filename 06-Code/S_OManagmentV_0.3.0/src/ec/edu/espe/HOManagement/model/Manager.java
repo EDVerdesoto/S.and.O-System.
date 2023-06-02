@@ -1,6 +1,7 @@
 package ec.edu.espe.HOManagement.model;
 
-import ec.edu.espe.HOManagement.view.ImputMenu;
+
+import ec.edu.espe.HOManagement.view.InputMenu;
 
 /**
  *
@@ -9,6 +10,6 @@ import ec.edu.espe.HOManagement.view.ImputMenu;
 public class Manager {
     public static void main(String[] args) {
         Registration.login();
-        ImputMenu.menu();
+        InputMenu.menu();
     }
 }
