@@ -28,4 +28,3 @@ public class Report {
         System.out.println(json);
     }
 }
-

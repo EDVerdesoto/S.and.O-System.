@@ -1,5 +1,6 @@
 package ec.edu.espe.HOManagement.view;
 
+import ec.edu.espe.HOManagement.model.Distributor;
 import ec.edu.espe.HOManagement.model.ProductItem;
 import ec.edu.espe.HOManagement.model.Report;
 import java.util.Scanner;
@@ -54,12 +55,12 @@ public class InputMenu {
         System.out.println("Se han vendido los productos");
     }
     public static void viewSalesReport() {
-        Report.generateReport(ProductItem.item()); 
+        
         System.out.println("Se muestra el reporte de ventas");
 }
 
     public static void supplierContacts() {
-        System.out.println("Se muestran los contactos de proveedores");
+        Distributor.menu();
     }
 }
 
