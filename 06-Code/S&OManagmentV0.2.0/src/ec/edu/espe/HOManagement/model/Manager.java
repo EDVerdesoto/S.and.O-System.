@@ -8,7 +8,7 @@ import ec.edu.espe.HOManagement.view.ImputMenu;
  */
 public class Manager {
     public static void main(String[] args) {
-        Registration.login();
+        //Registration.login();
         ImputMenu.menu();
     }
 }

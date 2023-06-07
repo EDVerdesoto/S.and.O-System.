@@ -7,32 +7,32 @@ import ec.edu.espe.HOManagement.model.RevenueCalculator;
  * @author Code Warriors, DCCO-ESPE
  */
 public class Distributor {
-    private String name;
-    private String product;
-    private String contactInfo;
-    private String request;
-    Scanner sc = new Scanner(System.in);
+    private static String name;
+    private static String product;
+    private static String contactInfo;
+    private static String request;
+    static Scanner sc = new Scanner(System.in);
     
-    public void PlaceOrder (){
+    public static void PlaceOrder (){
         
-        System.out.println("Do you want to make a new order?");
-        System.out.println("Insert the distributor name: ");
+        System.out.println("Quiere hacer una nueva orden?");
+        System.out.println("Inserte el nombre del distribuidor: ");
         name = sc.next(name);
-        System.out.println("This is the contact:" + contactInfo);
+        System.out.println("Este es el contacto:" + contactInfo);
     }
     
-    public void updateContactInfo (){
-        System.out.println("Whose contact information do you want to change?");
+    public static void updateContactInfo (){
+        System.out.println("De quien desea cambiar la informacion de contacto?");
         name = sc.next(name);
     }
     
-    public void updateRecuest (){
-        System.out.println("What product do you want to add?");
+    public static void updateRecuest (){
+        System.out.println("Que producto desea añadir?");
         product = sc.next(product);
                                 
     }
     
-    public void ChangeRequest(){
+    public static void ChangeRequest(){
         String product1 = null;
         String product2 = null;
         System.out.println("What product do you want to change?");

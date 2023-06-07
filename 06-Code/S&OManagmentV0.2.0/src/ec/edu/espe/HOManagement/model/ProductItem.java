@@ -15,7 +15,8 @@ public class ProductItem {
         int amount;
         Date enterDate;
         Date saleDate;
-        RevenueCalculator.calculateRevenue();
+        
+        
         enterDate = new Date ();
         Scanner sc = new Scanner (System.in);
         System.out.println("Insert the item id: ");
@@ -24,7 +25,11 @@ public class ProductItem {
         name = sc.next();
         System.out.println("Insert the item amount: ");
         amount = sc.nextInt();
-        System.out.println("This is the enter date of the item" + enterDate);           
+        RevenueCalculator.AddExpense();
+        RevenueCalculator.AddSale();
+        System.out.println("This is the enter date of the item" + enterDate);  
+        RevenueCalculator.CalculateRevenue();
+        RevenueCalculator.CalculateRevenueWithVat();                
             
     }
     
