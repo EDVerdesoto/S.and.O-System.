@@ -26,9 +26,11 @@ public class RevenueCalculator {
     }
 
     public float calculateRevenue() {
+        System.out.println("Ingrese el precio del Item: ");
+        expenses = sc.nextFloat();
         float sellPercentage = expenses * revenue;
         salePrice = expenses + sellPercentage;
-        System.out.println("This is the sale price to get the revenue: " + salePrice);
+        System.out.println("Este es el precio de venta, obteniendo su ganancia: " + salePrice);
         return salePrice;
     }
 

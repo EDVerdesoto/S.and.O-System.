@@ -21,23 +21,23 @@ public class ProductItem {
         String name;
         int amount;
         Date enterDate;
-
-        RevenueCalculator revenueCalculator = new RevenueCalculator();
-        revenueCalculator.calculateRevenue();
-
         enterDate = new Date();
         Scanner sc = new Scanner(System.in);
-
-        System.out.println("Insert the item id: ");
+        RevenueCalculator revenueCalculator = new RevenueCalculator();
+ 
+        System.out.println("Ingrese el id del producto: ");
         id = sc.nextInt();
 
-        System.out.println("Insert the item name: ");
+        System.out.println("Ingrese el nombre del item: ");
         name = sc.next();
 
-        System.out.println("Insert the item amount: ");
+        System.out.println("Ingrese la cantidad de items: ");
         amount = sc.nextInt();
+       
+        revenueCalculator.calculateRevenue();
 
-        System.out.println("This is the enter date of the item: " + enterDate);
+        System.out.println("Esta es la fecha de registro: " + enterDate);
+        
 
         Map<String, Object> itemMap = new HashMap<>();
         itemMap.put("id", id);
