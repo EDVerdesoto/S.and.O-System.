@@ -1,0 +1,69 @@
+[
+  {
+    "id": 435.0,
+    "name": "weger",
+    "amount": 34354.0,
+    "enterDate": "Jun 19, 2023, 11:34:26 PM"
+  },
+  {
+    "id": 54.0,
+    "name": "frf",
+    "amount": 7.0,
+    "enterDate": "Jun 19, 2023, 11:34:34 PM"
+  },
+  {
+    "id": 479.0,
+    "name": "pintura",
+    "amount": 546.0,
+    "enterDate": "Jun 19, 2023, 11:35:11 PM"
+  },
+  {
+    "id": 23.0,
+    "name": "ef",
+    "amount": 13241.0,
+    "enterDate": "Jun 19, 2023, 11:44:39 PM"
+  },
+  {
+    "id": 23.0,
+    "name": "pintura",
+    "amount": 7654.0,
+    "enterDate": "Jun 19, 2023, 11:46:12 PM"
+  },
+  {
+    "id": 124.0,
+    "name": "wef",
+    "amount": 45356.0,
+    "enterDate": "Jun 19, 2023, 11:46:12 PM"
+  },
+  {
+    "id": 454.0,
+    "name": "frf",
+    "amount": 76543.0,
+    "enterDate": "Jun 19, 2023, 11:57:09 PM"
+  },
+  {
+    "id": 34.0,
+    "name": "fw",
+    "amount": 234.0,
+    "enterDate": "Jun 19, 2023, 11:59:10 PM"
+  },
+  {
+    "id": 34.0,
+    "name": "e",
+    "amount": 4.0,
+    "enterDate": "Jun 20, 2023, 12:07:05 AM"
+  },
+  {
+    "id": 543,
+    "name": "pintura",
+    "amount": 7654,
+    "enterDate": "Jun 20, 2023, 12:12:36 AM",
+    "revenue": 13.0,
+    "revenueCalculator": {
+      "revenue": 0.3,
+      "salePrice": 13.0,
+      "expenses": 10.0,
+      "vatRate": 0.12
+    }
+  }
+]
