@@ -54,15 +54,41 @@
     "enterDate": "Jun 20, 2023, 12:07:05 AM"
   },
   {
-    "id": 543,
+    "id": 543.0,
     "name": "pintura",
-    "amount": 7654,
+    "amount": 7654.0,
     "enterDate": "Jun 20, 2023, 12:12:36 AM",
     "revenue": 13.0,
     "revenueCalculator": {
       "revenue": 0.3,
       "salePrice": 13.0,
       "expenses": 10.0,
+      "vatRate": 0.12
+    }
+  },
+  {
+    "id": 1.0,
+    "name": "0.2",
+    "amount": 8.0,
+    "enterDate": "Jun 21, 2023, 7:25:30 PM",
+    "revenue": -0.26,
+    "revenueCalculator": {
+      "revenue": 0.3,
+      "salePrice": -0.26,
+      "expenses": -0.2,
+      "vatRate": 0.12
+    }
+  },
+  {
+    "id": 1,
+    "name": "2",
+    "amount": 3,
+    "enterDate": "Jun 21, 2023, 7:31:49 PM",
+    "revenue": -10.4,
+    "revenueCalculator": {
+      "revenue": 0.3,
+      "salePrice": -10.4,
+      "expenses": -8.0,
       "vatRate": 0.12
     }
   }
