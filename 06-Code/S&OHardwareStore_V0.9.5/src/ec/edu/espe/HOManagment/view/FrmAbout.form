@@ -126,6 +126,7 @@
         </Component>
         <Component class="javax.swing.JTextField" name="txtTitle">
           <Properties>
+            <Property name="editable" type="boolean" value="false"/>
             <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="ac" green="91" red="69" type="rgb"/>
             </Property>
@@ -136,7 +137,7 @@
               <Color blue="33" green="33" red="0" type="rgb"/>
             </Property>
             <Property name="horizontalAlignment" type="int" value="0"/>
-            <Property name="text" type="java.lang.String" value="BIENBENIDO A S&amp;O FERRETERIA"/>
+            <Property name="text" type="java.lang.String" value="BIENVENIDO A S&amp;O FERRETERIA"/>
           </Properties>
           <Events>
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="txtTitleActionPerformed"/>

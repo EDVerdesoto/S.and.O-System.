@@ -10,6 +10,7 @@ import ec.edu.espe.HOManagment.model.User;
 import java.awt.Color;
 import java.awt.Image;
 import java.awt.Toolkit;
+import java.awt.event.KeyEvent;
 import java.util.ArrayList;
 import java.util.List;
 import javax.swing.JFrame;
@@ -45,16 +46,11 @@ public class FrmLogin extends javax.swing.JFrame {
     }
     
     public FrmLogin() {
-        
-        Connection.connectionDataBase();
-        
-        initComponents();
         userController = new UserController();
         setDefaultCloseOperation(JFrame.DO_NOTHING_ON_CLOSE);
         String path = System.getProperty("user.dir");
-        
+
         this.setTitle("Login Window");
-        
     }
     
     public void showAlertProducts() {
@@ -186,6 +182,9 @@ public class FrmLogin extends javax.swing.JFrame {
             }
         });
         passwordField.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyPressed(java.awt.event.KeyEvent evt) {
+                passwordFieldKeyPressed(evt);
+            }
             public void keyTyped(java.awt.event.KeyEvent evt) {
                 passwordFieldKeyTyped(evt);
             }
@@ -403,6 +402,10 @@ public class FrmLogin extends javax.swing.JFrame {
             evt.consume();
         }
     }//GEN-LAST:event_textFieldUserKeyTyped
+
+    private void passwordFieldKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_passwordFieldKeyPressed
+        
+    }//GEN-LAST:event_passwordFieldKeyPressed
 
     /**
      * @param args the command line arguments

@@ -45,7 +45,7 @@ public class FrmSupplier extends javax.swing.JFrame {
         btnBackToMenu = new javax.swing.JButton();
         jLabel7 = new javax.swing.JLabel();
         jLabel9 = new javax.swing.JLabel();
-        txtAddress1 = new javax.swing.JTextField();
+        txtinvoiceNumber = new javax.swing.JTextField();
         jSeparator1 = new javax.swing.JSeparator();
         jSeparator3 = new javax.swing.JSeparator();
         jSeparator4 = new javax.swing.JSeparator();
@@ -58,6 +58,7 @@ public class FrmSupplier extends javax.swing.JFrame {
         txtAddress = new javax.swing.JTextField();
         btnAddSupplier = new javax.swing.JButton();
         jSeparator2 = new javax.swing.JSeparator();
+        jLabel1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -81,18 +82,18 @@ public class FrmSupplier extends javax.swing.JFrame {
         jLabel9.setText("Número:");
         jPanel3.add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 160, -1, -1));
 
-        txtAddress1.setBorder(null);
-        txtAddress1.addActionListener(new java.awt.event.ActionListener() {
+        txtinvoiceNumber.setBorder(null);
+        txtinvoiceNumber.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                txtAddress1ActionPerformed(evt);
+                txtinvoiceNumberActionPerformed(evt);
             }
         });
-        txtAddress1.addKeyListener(new java.awt.event.KeyAdapter() {
+        txtinvoiceNumber.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyTyped(java.awt.event.KeyEvent evt) {
-                txtAddress1KeyTyped(evt);
+                txtinvoiceNumberKeyTyped(evt);
             }
         });
-        jPanel3.add(txtAddress1, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 320, 256, -1));
+        jPanel3.add(txtinvoiceNumber, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 320, 256, -1));
         jPanel3.add(jSeparator1, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 220, 256, 10));
         jPanel3.add(jSeparator3, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 130, 256, 10));
         jPanel3.add(jSeparator4, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 180, 256, 10));
@@ -124,6 +125,11 @@ public class FrmSupplier extends javax.swing.JFrame {
         jLabel2.setText("Nombre");
         jPanel3.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 110, -1, -1));
 
+        txtAddress.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtAddressActionPerformed(evt);
+            }
+        });
         txtAddress.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyTyped(java.awt.event.KeyEvent evt) {
                 txtAddressKeyTyped(evt);
@@ -139,6 +145,9 @@ public class FrmSupplier extends javax.swing.JFrame {
         });
         jPanel3.add(btnAddSupplier, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 360, -1, -1));
         jPanel3.add(jSeparator2, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 280, 256, 10));
+
+        jLabel1.setText("Número de factura");
+        jPanel3.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 320, -1, -1));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -214,19 +223,23 @@ public class FrmSupplier extends javax.swing.JFrame {
             JOptionPane.showMessageDialog(rootPane, "Ingresar solo letras \n Enter only letters");}  // TODO add your handling code here:
     }//GEN-LAST:event_txtAddressKeyTyped
 
-    private void txtAddress1KeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txtAddress1KeyTyped
+    private void txtinvoiceNumberKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txtinvoiceNumberKeyTyped
         char validar = evt.getKeyChar();
-        if(Character.isDigit(validar)){
+        if(Character.isLetter(validar)){
             getToolkit().beep();
-
+            
             evt.consume();
-            JOptionPane.showMessageDialog(rootPane, "Ingresar solo letras \n Enter only letters");}
+            JOptionPane.showMessageDialog(rootPane, "Ingresar solo numeros \n Enter only numbers");}
         // TODO add your handling code here:
-    }//GEN-LAST:event_txtAddress1KeyTyped
+    }//GEN-LAST:event_txtinvoiceNumberKeyTyped
 
-    private void txtAddress1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtAddress1ActionPerformed
+    private void txtinvoiceNumberActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtinvoiceNumberActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_txtAddress1ActionPerformed
+    }//GEN-LAST:event_txtinvoiceNumberActionPerformed
+
+    private void txtAddressActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtAddressActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txtAddressActionPerformed
 
     /**
      * @param args the command line arguments
@@ -267,6 +280,7 @@ public class FrmSupplier extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btnAddSupplier;
     private javax.swing.JButton btnBackToMenu;
+    private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel6;
@@ -278,9 +292,9 @@ public class FrmSupplier extends javax.swing.JFrame {
     private javax.swing.JSeparator jSeparator3;
     private javax.swing.JSeparator jSeparator4;
     private javax.swing.JTextField txtAddress;
-    private javax.swing.JTextField txtAddress1;
     private javax.swing.JTextField txtName;
     private javax.swing.JTextField txtNumber;
     private javax.swing.JTextField txtPendingPayment;
+    private javax.swing.JTextField txtinvoiceNumber;
     // End of variables declaration//GEN-END:variables
 }

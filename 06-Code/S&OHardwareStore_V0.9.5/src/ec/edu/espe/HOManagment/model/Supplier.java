@@ -11,6 +11,7 @@ public class Supplier {
     private String number;
     private double pendingPayment;
     private String address;
+    private String invoiceNumber;
 
     public Supplier() {
     }
@@ -24,7 +25,7 @@ public class Supplier {
 
     @Override
     public String toString() {
-        return "Supplier{" + "name=" + name + ", number=" + number + ", pendingPayment=" + pendingPayment  + ", address=" + address + '}';
+        return "Supplier{" + "name=" + name + ", number=" + number + ", pendingPayment=" + pendingPayment  + ", address=" + address + ",Invoice Number="+ invoiceNumber+'}';
     }
 
     /**
@@ -81,6 +82,21 @@ public class Supplier {
      */
     public void setAddress(String address) {
         this.address = address;
+    }
+    
+    /**
+     * @return the invoiceNumber
+     */
+    public String getinvoiceNumber() {
+        return invoiceNumber;
+    }
+
+    /**
+     * 
+     * @param invoiceNumber
+     */
+    public void setinvoiceNumber(String invoiceNumber) {
+        this.invoiceNumber = invoiceNumber;
     }
 
 }

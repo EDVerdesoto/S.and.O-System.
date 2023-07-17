@@ -79,11 +79,12 @@ public class FrmAbout extends javax.swing.JFrame {
         });
         jPanel4.add(txtOK, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 340, 110, 50));
 
+        txtTitle.setEditable(false);
         txtTitle.setBackground(new java.awt.Color(105, 145, 172));
         txtTitle.setFont(new java.awt.Font("Segoe UI", 0, 24)); // NOI18N
         txtTitle.setForeground(new java.awt.Color(0, 51, 51));
         txtTitle.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        txtTitle.setText("BIENBENIDO A S&O FERRETERIA");
+        txtTitle.setText("BIENVENIDO A S&O FERRETERIA");
         txtTitle.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 txtTitleActionPerformed(evt);

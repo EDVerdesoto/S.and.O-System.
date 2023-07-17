@@ -58,6 +58,7 @@ public class FrmHelp extends javax.swing.JFrame {
         });
         jPanel4.add(txtOK1, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 320, 90, -1));
 
+        txtSupport.setEditable(false);
         txtSupport.setBackground(new java.awt.Color(105, 145, 172));
         txtSupport.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
         txtSupport.setForeground(new java.awt.Color(0, 51, 51));
