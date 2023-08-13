@@ -8,7 +8,7 @@ import java.awt.Toolkit;
  *
  * @author  Code Warriors, DCCO-ESPE
  */
-public class FrmHardwareStoreMenu extends javax.swing.JFrame {
+public class FrmHardwareStoreMenu1 extends javax.swing.JFrame {
 
     public class centerFrame extends javax.swing.JFrame {
 
@@ -28,7 +28,7 @@ public class FrmHardwareStoreMenu extends javax.swing.JFrame {
     /**
      * Creates new form frmStylesirelia
      */
-    public FrmHardwareStoreMenu() {
+    public FrmHardwareStoreMenu1() {
         initComponents();
         Connection.connectionDataBase();
 
@@ -104,7 +104,6 @@ public class FrmHardwareStoreMenu extends javax.swing.JFrame {
         jMenuBar1.add(txtStyles);
 
         jMenu1.setText("Clientes");
-        jMenu1.setEnabled(false);
 
         menuAddCustomer.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_Q, 0));
         menuAddCustomer.setText("Agregar cliente");
@@ -185,7 +184,6 @@ public class FrmHardwareStoreMenu extends javax.swing.JFrame {
         jMenuBar1.add(jMenu4);
 
         jMenu6.setText("Proveedor");
-        jMenu6.setEnabled(false);
 
         itemAddSuppliers.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_A, 0));
         itemAddSuppliers.setText("Agregar proveedor");
@@ -260,8 +258,8 @@ public class FrmHardwareStoreMenu extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void txtStylesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtStylesActionPerformed
-        FrmHardwareStoreMenu frmHardwareStore;
-        frmHardwareStore = new FrmHardwareStoreMenu();
+        FrmHardwareStoreMenu1 frmHardwareStore;
+        frmHardwareStore = new FrmHardwareStoreMenu1();
         frmHardwareStore.setVisible(true);
         this.setVisible(false);
     }//GEN-LAST:event_txtStylesActionPerformed
@@ -384,14 +382,30 @@ public class FrmHardwareStoreMenu extends javax.swing.JFrame {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(FrmHardwareStoreMenu.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(FrmHardwareStoreMenu1.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(FrmHardwareStoreMenu.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(FrmHardwareStoreMenu1.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(FrmHardwareStoreMenu.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(FrmHardwareStoreMenu1.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(FrmHardwareStoreMenu.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(FrmHardwareStoreMenu1.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
         //</editor-fold>
         //</editor-fold>
         //</editor-fold>
@@ -412,7 +426,7 @@ public class FrmHardwareStoreMenu extends javax.swing.JFrame {
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new FrmHardwareStoreMenu().setVisible(true);
+                new FrmHardwareStoreMenu1().setVisible(true);
             }
         });
     }

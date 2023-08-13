@@ -155,9 +155,9 @@ public class FrmHelp extends javax.swing.JFrame {
     }//GEN-LAST:event_txtMailTipanActionPerformed
 
     private void txtOK1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtOK1ActionPerformed
-        FrmHardwareStoreMenu frmStylesirelia;
-        frmStylesirelia = new FrmHardwareStoreMenu();
-        frmStylesirelia.setVisible(true);
+        FrmHardwareStoreMenu1 frmHardwareStoreMenu;
+        frmHardwareStoreMenu = new FrmHardwareStoreMenu1();
+        frmHardwareStoreMenu.setVisible(true);
         this.setVisible(false);
     }//GEN-LAST:event_txtOK1ActionPerformed
 

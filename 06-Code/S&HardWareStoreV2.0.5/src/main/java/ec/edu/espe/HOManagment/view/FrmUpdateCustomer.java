@@ -350,8 +350,8 @@ public class FrmUpdateCustomer extends javax.swing.JFrame {
     }//GEN-LAST:event_txtUpdate1ActionPerformed
 
     private void btnBackMenuActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnBackMenuActionPerformed
-        FrmHardwareStoreMenu frmStylesIreliaMenu = new FrmHardwareStoreMenu();
-        frmStylesIreliaMenu.setVisible(true);
+        FrmHardwareStoreMenu1 frmHardwareStoreMenu = new FrmHardwareStoreMenu1();
+        frmHardwareStoreMenu.setVisible(true);
         this.setVisible(false);
 
     }//GEN-LAST:event_btnBackMenuActionPerformed
