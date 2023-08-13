@@ -63,7 +63,7 @@ public class FrmTableProduct extends javax.swing.JFrame {
             tableProducts.setModel(new javax.swing.table.DefaultTableModel(
                     objects,
                     new String[]{
-                        "Nombre", "Fecha de expiracion", "Precio", "Stock"
+                        "Nombre", "Fecha de expiracion", "Precio", "Stock" , "Precio de Venta"
                     }
             )
             );
