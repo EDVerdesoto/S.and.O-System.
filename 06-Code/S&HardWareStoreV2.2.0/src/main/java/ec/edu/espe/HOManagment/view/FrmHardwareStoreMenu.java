@@ -174,6 +174,7 @@ public class FrmHardwareStoreMenu extends javax.swing.JFrame {
         });
         jMenu4.add(menuDeleteProduct);
 
+        jCheckBoxMenuItem1.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_V, 0));
         jCheckBoxMenuItem1.setSelected(true);
         jCheckBoxMenuItem1.setText("Vender productos");
         jCheckBoxMenuItem1.addActionListener(new java.awt.event.ActionListener() {
@@ -183,7 +184,7 @@ public class FrmHardwareStoreMenu extends javax.swing.JFrame {
         });
         jMenu4.add(jCheckBoxMenuItem1);
 
-        itmTableProduct.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_V, 0));
+        itmTableProduct.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_B, 0));
         itmTableProduct.setText("Tabla de productos");
         itmTableProduct.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {

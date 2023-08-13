@@ -63,11 +63,8 @@ public class FrmTableProduct extends javax.swing.JFrame {
             tableProducts.setModel(new javax.swing.table.DefaultTableModel(
                     objects,
                     new String[]{
-<<<<<<< HEAD:06-Code/S&HardWareStoreV2.1.1/src/main/java/ec/edu/espe/HOManagment/view/FrmTableProduct.java
-                        "Nombre", "Fecha de expiracion", "Precio", "Stock" , "Precio de Venta"
-=======
                         "Nombre", "Fecha de ingreso", "Costo", "Stock" , "Precio de venta" ,
->>>>>>> 36127ec72d4ec73181c2712ed0e9a5aeebeb3508:06-Code/S&HardWareStoreV2.2.0/src/main/java/ec/edu/espe/HOManagment/view/FrmTableProduct.java
+
                     }
             )
             );
