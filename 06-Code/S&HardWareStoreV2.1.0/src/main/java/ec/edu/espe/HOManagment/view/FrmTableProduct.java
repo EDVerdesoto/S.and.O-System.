@@ -58,7 +58,8 @@ public class FrmTableProduct extends javax.swing.JFrame {
             objects[i][1] = products.get(i).getIncome();
             objects[i][2] = products.get(i).getPrice();
             objects[i][3] = products.get(i).getStock();
-
+            objects[i][4] = products.get(i).getRevenue();
+            
             tableProducts.setModel(new javax.swing.table.DefaultTableModel(
                     objects,
                     new String[]{
@@ -91,13 +92,13 @@ public class FrmTableProduct extends javax.swing.JFrame {
 
         tableProducts.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null}
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null}
             },
             new String [] {
-                "Nombre", "Fecha de ingreso", "Precio", "Stock"
+                "Nombre", "Fecha de ingreso", "Precio de compra", "Stock", "Precio de venta"
             }
         ));
         jScrollPane1.setViewportView(tableProducts);
@@ -132,12 +133,9 @@ public class FrmTableProduct extends javax.swing.JFrame {
         jPanel1Layout.setHorizontalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jScrollPane1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 486, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                        .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 220, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(95, 95, 95)))
-                .addGap(0, 0, Short.MAX_VALUE))
+                .addGap(171, 171, 171)
+                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 220, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addGap(32, 32, 32)
                 .addComponent(btnLoad, javax.swing.GroupLayout.PREFERRED_SIZE, 84, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -145,6 +143,10 @@ public class FrmTableProduct extends javax.swing.JFrame {
                 .addComponent(btnPrintProducts)
                 .addGap(69, 69, 69)
                 .addComponent(btnBack)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 502, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         jPanel1Layout.setVerticalGroup(
