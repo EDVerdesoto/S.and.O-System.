@@ -59,6 +59,7 @@ public class FrmHardwareStoreMenu extends javax.swing.JFrame {
         itmProduct = new javax.swing.JMenuItem();
         jMenuItem2 = new javax.swing.JMenuItem();
         menuDeleteProduct = new javax.swing.JMenuItem();
+        jCheckBoxMenuItem1 = new javax.swing.JCheckBoxMenuItem();
         itmTableProduct = new javax.swing.JMenuItem();
         jMenu6 = new javax.swing.JMenu();
         itemAddSuppliers = new javax.swing.JMenuItem();
@@ -172,6 +173,15 @@ public class FrmHardwareStoreMenu extends javax.swing.JFrame {
             }
         });
         jMenu4.add(menuDeleteProduct);
+
+        jCheckBoxMenuItem1.setSelected(true);
+        jCheckBoxMenuItem1.setText("Vender productos");
+        jCheckBoxMenuItem1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jCheckBoxMenuItem1ActionPerformed(evt);
+            }
+        });
+        jMenu4.add(jCheckBoxMenuItem1);
 
         itmTableProduct.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_V, 0));
         itmTableProduct.setText("Tabla de productos");
@@ -367,6 +377,12 @@ public class FrmHardwareStoreMenu extends javax.swing.JFrame {
         this.setVisible(false);
     }//GEN-LAST:event_jMenuItem4ActionPerformed
 
+    private void jCheckBoxMenuItem1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jCheckBoxMenuItem1ActionPerformed
+        FrmSellProduct frmSellProduct = new FrmSellProduct();
+        frmSellProduct.setVisible(true);
+        this.setVisible(false);
+    }//GEN-LAST:event_jCheckBoxMenuItem1ActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -425,6 +441,7 @@ public class FrmHardwareStoreMenu extends javax.swing.JFrame {
     private javax.swing.JMenuItem itmTableCustomer;
     private javax.swing.JMenuItem itmTableProduct;
     private javax.swing.JMenuItem itmTableSupllier;
+    private javax.swing.JCheckBoxMenuItem jCheckBoxMenuItem1;
     private javax.swing.JMenu jMenu1;
     private javax.swing.JMenu jMenu3;
     private javax.swing.JMenu jMenu4;

@@ -458,14 +458,6 @@ public class FrmLogin extends javax.swing.JFrame {
         loginVerification();
     }//GEN-LAST:event_btnEnterLoginActionPerformed
 
-    private void btnGuestActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnGuestActionPerformed
-        FrmHardwareStoreMenu frmHardwareStoreMenu = new FrmHardwareStoreMenu();
-            JOptionPane.showMessageDialog(null, "Bienvenido al sistema.");
-            this.setVisible(false);
-            frmHardwareStoreMenu.setVisible(true);
-            showAlertProducts();
-    }//GEN-LAST:event_btnGuestActionPerformed
-
     private void btnLeaveLogin1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnLeaveLogin1ActionPerformed
         System.exit(0);
     }//GEN-LAST:event_btnLeaveLogin1ActionPerformed
@@ -477,6 +469,14 @@ public class FrmLogin extends javax.swing.JFrame {
     private void btnEnterLoginKeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_btnEnterLoginKeyReleased
         // TODO add your handling code here:
     }//GEN-LAST:event_btnEnterLoginKeyReleased
+
+    private void btnGuestActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnGuestActionPerformed
+        FrmHardwareStoreMenu frmHardwareStoreMenu = new FrmHardwareStoreMenu();
+        JOptionPane.showMessageDialog(null, "Bienvenido al sistema.");
+        this.setVisible(false);
+        frmHardwareStoreMenu.setVisible(true);
+        showAlertProducts();
+    }//GEN-LAST:event_btnGuestActionPerformed
 
     /**
      * @param args the command line arguments

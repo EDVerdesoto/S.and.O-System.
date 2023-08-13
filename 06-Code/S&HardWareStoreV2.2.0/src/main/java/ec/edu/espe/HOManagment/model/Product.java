@@ -1,5 +1,4 @@
 package ec.edu.espe.HOManagment.model;
-
 import java.io.Serializable;
 
 /**
