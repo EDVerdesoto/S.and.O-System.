@@ -1,6 +1,8 @@
 package ec.edu.espe.HOManagment.controller;
 
+import com.mongodb.client.model.Filters;
 import ec.edu.espe.HOManagment.model.Product;
+import java.util.Collection;
 import org.bson.Document;
 
 /**
@@ -34,5 +36,6 @@ public class ProductController extends BasicController<Product> {
         double newPrice = price * revenuePercentage;
         return Decimals.roundToTwoTenths(newPrice);
     }
-
+    
+    
 }

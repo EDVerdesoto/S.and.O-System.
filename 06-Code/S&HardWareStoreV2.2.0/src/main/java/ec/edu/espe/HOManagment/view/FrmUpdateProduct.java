@@ -1,4 +1,3 @@
-
 package ec.edu.espe.HOManagment.view;
 
 import com.mongodb.MongoClientSettings;
@@ -57,7 +56,7 @@ public class FrmUpdateProduct extends javax.swing.JFrame {
         loadProductComboBox();
         setLocationRelativeTo(null);
     }
-    
+
     public void loadProductComboBox() {
         CodecRegistry codecRegistry = MongoClientSettings.getDefaultCodecRegistry();
         codecRegistry = fromRegistries(codecRegistry, fromProviders(PojoCodecProvider.builder().automatic(true).build()));
@@ -66,7 +65,7 @@ public class FrmUpdateProduct extends javax.swing.JFrame {
         MongoCollection<Product> collectionProducts = db.getCollection("products", Product.class);
         List<Product> products = collectionProducts.find().into(new ArrayList<>());
 
-        comboBoxProducts.removeAllItems(); // Limpiar los elementos actuales del combo box
+        comboBoxProducts.removeAllItems();
 
         for (Product product : products) {
             comboBoxProducts.addItem(product.getName());
@@ -259,7 +258,7 @@ public class FrmUpdateProduct extends javax.swing.JFrame {
             txtStock.setText(String.valueOf(product.getStock()));
         } catch (ParseException ex) {
             JOptionPane.showMessageDialog(null, "Hubo un error, reintente");
-        } catch (Exception e){
+        } catch (Exception e) {
             JOptionPane.showMessageDialog(null, "No se encontro");
         }
 
@@ -267,20 +266,22 @@ public class FrmUpdateProduct extends javax.swing.JFrame {
 
     private void txtNameKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txtNameKeyTyped
         char validar = evt.getKeyChar();
-        if(Character.isDigit(validar)){
+        if (Character.isDigit(validar)) {
             getToolkit().beep();
 
             evt.consume();
-            JOptionPane.showMessageDialog(rootPane, "Ingresar solo letras \n Enter only letters");}        // TODO add your handling code here:
+            JOptionPane.showMessageDialog(rootPane, "Ingresar solo letras \n Enter only letters");
+        }        // TODO add your handling code here:
     }//GEN-LAST:event_txtNameKeyTyped
 
     private void txtPriceKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txtPriceKeyTyped
         char validar = evt.getKeyChar();
-        if(Character.isLetter(validar)){
+        if (Character.isLetter(validar)) {
             getToolkit().beep();
 
             evt.consume();
-            JOptionPane.showMessageDialog(rootPane, "Ingresar solo numeros \n Enter only numbers");}   // TODO add your handling code here:
+            JOptionPane.showMessageDialog(rootPane, "Ingresar solo numeros \n Enter only numbers");
+        }   // TODO add your handling code here:
     }//GEN-LAST:event_txtPriceKeyTyped
 
     private void txtStockActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtStockActionPerformed
@@ -289,25 +290,27 @@ public class FrmUpdateProduct extends javax.swing.JFrame {
 
     private void txtStockKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txtStockKeyTyped
         char validar = evt.getKeyChar();
-        if(Character.isLetter(validar)){
+        if (Character.isLetter(validar)) {
             getToolkit().beep();
 
             evt.consume();
-            JOptionPane.showMessageDialog(rootPane, "Ingresar solo numeros \n Enter only numbers");} 
+            JOptionPane.showMessageDialog(rootPane, "Ingresar solo numeros \n Enter only numbers");
+        }
     }//GEN-LAST:event_txtStockKeyTyped
 
     private void btnUpdateActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnUpdateActionPerformed
+        
         double revenue = productController.calculateRevenue(Float.parseFloat(txtPrice.getText()));
-        Product product = new Product(txtName.getText(),Float.parseFloat(txtPrice.getText()),formDate.format(txtExpirationDate.getDate()),Integer.parseInt(txtStock.getText()),revenue);
+        Product product = new Product(txtName.getText(), Float.parseFloat(txtPrice.getText()), formDate.format(txtExpirationDate.getDate()), Integer.parseInt(txtStock.getText()), revenue);
         Document doc = productController.read(comboBoxProducts.getSelectedItem().toString(), "name");
 
         productController.update(doc, productController.buildDocument(product));
         Document result = productController.read(productController.buildDocument(product));
-        if (result!=null) {
+        if (result != null) {
 
             JOptionPane.showMessageDialog(null, "Actualizado correctamente");
 
-        }else{
+        } else {
             JOptionPane.showMessageDialog(null, "Hubo un problema, reintente");
         }
 
