@@ -31,5 +31,4 @@
             <type>jar</type>
         </dependency>
     </dependencies>
-    <name>SOHardWareStore</name>
 </project>

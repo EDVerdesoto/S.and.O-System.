@@ -1,3 +1,4 @@
+
 package ec.edu.espe.HOManagment.view;
 
 import com.toedter.calendar.JDateChooser;
@@ -10,7 +11,7 @@ import org.bson.Document;
 
 /**
  *
- * @author Code Warriors, DCCO-ESPE
+ * @author  Code Warriors, DCCO-ESPE
  */
 public class FrmProduct extends javax.swing.JFrame {
 
@@ -231,12 +232,11 @@ public class FrmProduct extends javax.swing.JFrame {
 
     private void txtNameKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txtNameKeyTyped
         char validar = evt.getKeyChar();
-        if (Character.isDigit(validar)) {
+        if(Character.isDigit(validar)){
             getToolkit().beep();
 
             evt.consume();
-            JOptionPane.showMessageDialog(rootPane, "Ingresar solo letras \n Enter only letters");
-        }
+            JOptionPane.showMessageDialog(rootPane, "Ingresar solo letras \n Enter only letters");}
     }//GEN-LAST:event_txtNameKeyTyped
 
     private void txtPriceActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtPriceActionPerformed
@@ -245,12 +245,11 @@ public class FrmProduct extends javax.swing.JFrame {
 
     private void txtPriceKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txtPriceKeyTyped
         char validar = evt.getKeyChar();
-        if (Character.isLetter(validar)) {
+        if(Character.isLetter(validar)){
             getToolkit().beep();
 
             evt.consume();
-            JOptionPane.showMessageDialog(rootPane, "Ingresar solo numeros \n Enter only numbers");
-        } // TODO add your handling code here:
+            JOptionPane.showMessageDialog(rootPane, "Ingresar solo numeros \n Enter only numbers");} // TODO add your handling code here:
     }//GEN-LAST:event_txtPriceKeyTyped
 
     private void txtStockActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtStockActionPerformed
@@ -259,12 +258,11 @@ public class FrmProduct extends javax.swing.JFrame {
 
     private void txtStockKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txtStockKeyTyped
         char validar = evt.getKeyChar();
-        if (Character.isLetter(validar)) {
+        if(Character.isLetter(validar)){
             getToolkit().beep();
 
             evt.consume();
-            JOptionPane.showMessageDialog(rootPane, "Ingresar solo numeros \n Enter only numbers");
-        }
+            JOptionPane.showMessageDialog(rootPane, "Ingresar solo numeros \n Enter only numbers");}// TODO add your handling code here:
     }//GEN-LAST:event_txtStockKeyTyped
 
     private void btnAddProductActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAddProductActionPerformed
@@ -273,14 +271,13 @@ public class FrmProduct extends javax.swing.JFrame {
         String name;
         Float price;
         int stock;
-        double revenue;
 
         name = txtName.getText();
         expiration = formDate.format(dtcExpirationProduct.getDate());
         price = Float.parseFloat(txtPrice.getText());
         stock = Integer.parseInt(txtStock.getText());
-        revenue = productController.calculateRevenue(price);
-        Product product = new Product(name, price, formDate.format(dtcExpirationProduct.getDate()), stock, revenue);
+
+        Product product = new Product(name, price, formDate.format(dtcExpirationProduct.getDate()), stock);
 
         productController.create(productController.buildDocument(product));
         Document result = productController.read(productController.buildDocument(product));
@@ -298,6 +295,7 @@ public class FrmProduct extends javax.swing.JFrame {
         this.setVisible(false);
     }//GEN-LAST:event_btnBackToMenuActionPerformed
 
+  
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btnAddProduct;

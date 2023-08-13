@@ -293,12 +293,11 @@ public class FrmUpdateProduct extends javax.swing.JFrame {
             getToolkit().beep();
 
             evt.consume();
-            JOptionPane.showMessageDialog(rootPane, "Ingresar solo numeros \n Enter only numbers");} 
+            JOptionPane.showMessageDialog(rootPane, "Ingresar solo numeros \n Enter only numbers");}  // TODO add your handling code here:
     }//GEN-LAST:event_txtStockKeyTyped
 
     private void btnUpdateActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnUpdateActionPerformed
-        double revenue = productController.calculateRevenue(Float.parseFloat(txtPrice.getText()));
-        Product product = new Product(txtName.getText(),Float.parseFloat(txtPrice.getText()),formDate.format(txtExpirationDate.getDate()),Integer.parseInt(txtStock.getText()),revenue);
+        Product product = new Product(txtName.getText(),Float.parseFloat(txtPrice.getText()),formDate.format(txtExpirationDate.getDate()),Integer.parseInt(txtStock.getText()));
         Document doc = productController.read(comboBoxProducts.getSelectedItem().toString(), "name");
 
         productController.update(doc, productController.buildDocument(product));

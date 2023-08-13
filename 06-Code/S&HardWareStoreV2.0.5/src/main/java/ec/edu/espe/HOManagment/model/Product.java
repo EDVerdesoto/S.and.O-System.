@@ -11,28 +11,25 @@ public class Product {
     private float price;
     private String income;
     private int stock;
-    private double revenue;
 
-    public Product(String name, Float price, String income, int stock, double revenue) {
+    public Product(String name, float price, String expiration, int stock) {
         this.name = name;
         this.price = price;
-        this.income = income;
+        this.income = expiration;
         this.stock = stock;
-        this.revenue = revenue;
     }
-   
+
     public Product() {
     }
+    
 
     @Override
     public String toString() {
-        return "Product{" + "name=" + getName() + ", price=" + getPrice() + ", income=" + getIncome() + ", stock=" + getStock() + 
-                ", revenue=" + getRevenue() + '}';
+        return "Product{" + "name=" + name + ", price=" + price + ", income=" + income + ", stock=" + stock + '}';
     }
-    
-    
+
     public String toStringData() {
-        return getName() + "," + getPrice() + "," + getIncome() + "," + getStock() + "," + getRevenue();
+        return name + "," + price + "," + income + "," + stock;
     }
 
     /**
@@ -89,19 +86,5 @@ public class Product {
      */
     public void setStock(int stock) {
         this.stock = stock;
-    }
-
-    /**
-     * @return the revenue
-     */
-    public double getRevenue() {
-        return revenue;
-    }
-
-    /**
-     * @param revenue the revenue to set
-     */
-    public void setRevenue(float revenue) {
-        this.revenue = revenue;
     }
 }
