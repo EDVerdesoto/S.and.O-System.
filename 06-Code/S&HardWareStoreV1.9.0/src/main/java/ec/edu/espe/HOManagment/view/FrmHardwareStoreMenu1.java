@@ -8,7 +8,7 @@ import java.awt.Toolkit;
  *
  * @author  Code Warriors, DCCO-ESPE
  */
-public class FrmHardwareStoreMenu extends javax.swing.JFrame {
+public class FrmHardwareStoreMenu1 extends javax.swing.JFrame {
 
     public class centerFrame extends javax.swing.JFrame {
 
@@ -28,11 +28,13 @@ public class FrmHardwareStoreMenu extends javax.swing.JFrame {
     /**
      * Creates new form frmStylesirelia
      */
-    public FrmHardwareStoreMenu() {
+    public FrmHardwareStoreMenu1() {
         initComponents();
         Connection.connectionDataBase();
 
     }
+    
+    
 
     /**
      * This method is called from within the constructor to initialize the form.
@@ -44,6 +46,7 @@ public class FrmHardwareStoreMenu extends javax.swing.JFrame {
     private void initComponents() {
 
         jMenu3 = new javax.swing.JMenu();
+        jPanel1 = new javax.swing.JPanel();
         jMenuBar1 = new javax.swing.JMenuBar();
         txtStyles = new javax.swing.JMenu();
         jMenuItem1 = new javax.swing.JMenuItem();
@@ -70,6 +73,17 @@ public class FrmHardwareStoreMenu extends javax.swing.JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setIconImages(null);
         setResizable(false);
+
+        javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
+        jPanel1.setLayout(jPanel1Layout);
+        jPanel1Layout.setHorizontalGroup(
+            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 588, Short.MAX_VALUE)
+        );
+        jPanel1Layout.setVerticalGroup(
+            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 358, Short.MAX_VALUE)
+        );
 
         txtStyles.setText("S&O Ferretería");
         txtStyles.addActionListener(new java.awt.event.ActionListener() {
@@ -151,7 +165,7 @@ public class FrmHardwareStoreMenu extends javax.swing.JFrame {
         });
         jMenu4.add(menuDeleteProduct);
 
-        itmTableProduct.setText("Tablla de productos");
+        itmTableProduct.setText("Tabla de productos");
         itmTableProduct.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 itmTableProductActionPerformed(evt);
@@ -220,11 +234,11 @@ public class FrmHardwareStoreMenu extends javax.swing.JFrame {
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 588, Short.MAX_VALUE)
+            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 358, Short.MAX_VALUE)
+            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
 
         pack();
@@ -232,9 +246,9 @@ public class FrmHardwareStoreMenu extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void txtStylesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtStylesActionPerformed
-        FrmHardwareStoreMenu frmStylesirelia;
-        frmStylesirelia = new FrmHardwareStoreMenu();
-        frmStylesirelia.setVisible(true);
+        FrmHardwareStoreMenu1 frmHardwareStore;
+        frmHardwareStore = new FrmHardwareStoreMenu1();
+        frmHardwareStore.setVisible(true);
         this.setVisible(false);
     }//GEN-LAST:event_txtStylesActionPerformed
 
@@ -356,14 +370,30 @@ public class FrmHardwareStoreMenu extends javax.swing.JFrame {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(FrmHardwareStoreMenu.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(FrmHardwareStoreMenu1.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(FrmHardwareStoreMenu.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(FrmHardwareStoreMenu1.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(FrmHardwareStoreMenu.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(FrmHardwareStoreMenu1.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(FrmHardwareStoreMenu.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(FrmHardwareStoreMenu1.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
         //</editor-fold>
         //</editor-fold>
         //</editor-fold>
@@ -384,7 +414,7 @@ public class FrmHardwareStoreMenu extends javax.swing.JFrame {
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new FrmHardwareStoreMenu().setVisible(true);
+                new FrmHardwareStoreMenu1().setVisible(true);
             }
         });
     }
@@ -406,6 +436,7 @@ public class FrmHardwareStoreMenu extends javax.swing.JFrame {
     private javax.swing.JMenuItem jMenuItem1;
     private javax.swing.JMenuItem jMenuItem2;
     private javax.swing.JMenuItem jMenuItem4;
+    private javax.swing.JPanel jPanel1;
     private javax.swing.JMenuItem menuAddCustomer;
     private javax.swing.JMenuItem menuDeleteCustomer;
     private javax.swing.JMenuItem menuDeleteProduct;
