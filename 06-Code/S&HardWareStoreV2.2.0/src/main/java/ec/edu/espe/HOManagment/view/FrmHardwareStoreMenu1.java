@@ -105,7 +105,6 @@ public class FrmHardwareStoreMenu1 extends javax.swing.JFrame {
         jMenuBar1.add(txtStyles);
 
         jMenu1.setText("Clientes");
-        jMenu1.setEnabled(false);
 
         menuAddCustomer.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_Q, 0));
         menuAddCustomer.setText("Agregar cliente");
@@ -196,7 +195,6 @@ public class FrmHardwareStoreMenu1 extends javax.swing.JFrame {
         jMenuBar1.add(jMenu4);
 
         jMenu6.setText("Proveedor");
-        jMenu6.setEnabled(false);
 
         itemAddSuppliers.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_A, 0));
         itemAddSuppliers.setText("Agregar proveedor");
@@ -278,8 +276,8 @@ public class FrmHardwareStoreMenu1 extends javax.swing.JFrame {
     }//GEN-LAST:event_txtStylesActionPerformed
 
     private void itmProductActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_itmProductActionPerformed
-        FrmProduct frmProduct;
-        frmProduct = new FrmProduct();
+        FrmProduct1 frmProduct;
+        frmProduct = new FrmProduct1();
         frmProduct.setVisible(true);
         this.setVisible(false);
     }//GEN-LAST:event_itmProductActionPerformed
@@ -292,8 +290,8 @@ public class FrmHardwareStoreMenu1 extends javax.swing.JFrame {
     }//GEN-LAST:event_jMenuItem1ActionPerformed
 
     private void itmTableProductActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_itmTableProductActionPerformed
-        FrmTableProduct frmTableProduct;
-        frmTableProduct = new FrmTableProduct();
+        FrmTableProduct1 frmTableProduct;
+        frmTableProduct = new FrmTableProduct1();
         frmTableProduct.setVisible(true);
         this.setVisible(false);
     }//GEN-LAST:event_itmTableProductActionPerformed
@@ -354,13 +352,13 @@ public class FrmHardwareStoreMenu1 extends javax.swing.JFrame {
     }//GEN-LAST:event_menuDeleteCustomerActionPerformed
 
     private void jMenuItem2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem2ActionPerformed
-        FrmUpdateProduct frmUpdateProduct = new FrmUpdateProduct();
+        FrmUpdateProduct1 frmUpdateProduct = new FrmUpdateProduct1();
         frmUpdateProduct.setVisible(true);
         this.setVisible(false);
     }//GEN-LAST:event_jMenuItem2ActionPerformed
 
     private void menuDeleteProductActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_menuDeleteProductActionPerformed
-        FrmDeleteProduct frmDeleteProduct = new FrmDeleteProduct();
+        FrmDeleteProduct1 frmDeleteProduct = new FrmDeleteProduct1();
         frmDeleteProduct.setVisible(true);
         this.setVisible(false);
 
@@ -379,7 +377,7 @@ public class FrmHardwareStoreMenu1 extends javax.swing.JFrame {
     }//GEN-LAST:event_jMenuItem4ActionPerformed
 
     private void jCheckBoxMenuItem1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jCheckBoxMenuItem1ActionPerformed
-        FrmSellProduct frmSellProduct = new FrmSellProduct();
+        FrmSellProduct1 frmSellProduct = new FrmSellProduct1();
         frmSellProduct.setVisible(true);
         this.setVisible(false);
     }//GEN-LAST:event_jCheckBoxMenuItem1ActionPerformed

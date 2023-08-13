@@ -20,7 +20,7 @@ import org.bson.codecs.pojo.PojoCodecProvider;
  *
  * @author Tipan Leonel, Code Warriors, DCCO-ESPE
  */
-public class FrmSellProduct extends javax.swing.JFrame {
+public class FrmDeleteProduct1 extends javax.swing.JFrame {
 
     public class centerFrame extends javax.swing.JFrame {
 
@@ -35,7 +35,7 @@ public class FrmSellProduct extends javax.swing.JFrame {
     /**
      * Creates new form FrmDeleteProduct
      */
-    public FrmSellProduct() {
+    public FrmDeleteProduct1() {
         initComponents();
         Connection.connectionDataBase();
         productController = new ProductController();
@@ -69,24 +69,22 @@ public class FrmSellProduct extends javax.swing.JFrame {
         jLabel1 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
         comboBoxProducts = new javax.swing.JComboBox<>();
-        btnSell = new javax.swing.JButton();
+        btnDelete = new javax.swing.JButton();
         btnBackToMenu = new javax.swing.JButton();
-        lblAmount = new javax.swing.JLabel();
-        txtAmount = new javax.swing.JTextField();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
         jLabel1.setFont(new java.awt.Font("Roboto Medium", 0, 24)); // NOI18N
         jLabel1.setForeground(new java.awt.Color(0, 51, 51));
-        jLabel1.setText("Venta de Producto");
+        jLabel1.setText("Eliminar Producto");
 
         jLabel2.setForeground(new java.awt.Color(0, 51, 51));
         jLabel2.setText("Nombre");
 
-        btnSell.setText("Vender");
-        btnSell.addActionListener(new java.awt.event.ActionListener() {
+        btnDelete.setText("Eliminar");
+        btnDelete.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnSellActionPerformed(evt);
+                btnDeleteActionPerformed(evt);
             }
         });
 
@@ -94,15 +92,6 @@ public class FrmSellProduct extends javax.swing.JFrame {
         btnBackToMenu.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnBackToMenuActionPerformed(evt);
-            }
-        });
-
-        lblAmount.setForeground(new java.awt.Color(0, 51, 51));
-        lblAmount.setText("Cantidad");
-
-        txtAmount.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                txtAmountActionPerformed(evt);
             }
         });
 
@@ -115,20 +104,16 @@ public class FrmSellProduct extends javax.swing.JFrame {
                 .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 220, javax.swing.GroupLayout.PREFERRED_SIZE))
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addGap(12, 12, 12)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(lblAmount, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(jLabel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addComponent(jLabel2)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(comboBoxProducts, javax.swing.GroupLayout.PREFERRED_SIZE, 190, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(txtAmount, javax.swing.GroupLayout.PREFERRED_SIZE, 71, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(0, 31, Short.MAX_VALUE))
+                .addComponent(comboBoxProducts, javax.swing.GroupLayout.PREFERRED_SIZE, 190, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 9, Short.MAX_VALUE))
             .addGroup(jPanel1Layout.createSequentialGroup()
-                .addGap(40, 40, 40)
-                .addComponent(btnSell)
+                .addGap(26, 26, 26)
+                .addComponent(btnDelete)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(btnBackToMenu)
-                .addGap(49, 49, 49))
+                .addGap(20, 20, 20))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -139,59 +124,47 @@ public class FrmSellProduct extends javax.swing.JFrame {
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel2)
                     .addComponent(comboBoxProducts, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 84, Short.MAX_VALUE)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(lblAmount)
-                    .addComponent(txtAmount, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 47, Short.MAX_VALUE)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(btnSell)
+                    .addComponent(btnDelete)
                     .addComponent(btnBackToMenu))
-                .addGap(32, 32, 32))
+                .addGap(17, 17, 17))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addGroup(layout.createSequentialGroup()
+                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void btnSellActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSellActionPerformed
+    private void btnDeleteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnDeleteActionPerformed
 
-        String productName = comboBoxProducts.getSelectedItem().toString();
-        int quantityToSell = Integer.parseInt(txtAmount.getText());
+        Product product = new Product();
 
-        String result = productController.sellProduct(productName, quantityToSell);
+        productController.delete("name", comboBoxProducts.getSelectedItem().toString());
 
-        if (result.equals("1")) {
-            JOptionPane.showMessageDialog(rootPane, "Venta realizada y stock actualizado en la base de datos");
-        } else if (result.equals("3")) {
-            JOptionPane.showMessageDialog(rootPane, "Stock insuficiente para realizar la venta");
-        } else if (result.equals("4")) {
-            JOptionPane.showMessageDialog(rootPane, "Producto no encontrado en la base de datos");
-        } else if (result.equals("2")) {
-            JOptionPane.showMessageDialog(rootPane, "Venta realizada, pero no se pudo actualizar el stock");
+        Document doc =productController.read(comboBoxProducts.getSelectedItem().toString(),"products");
+        if(doc==null){
+            JOptionPane.showMessageDialog(rootPane, "Fue eliminado exitosamente");
         }
-    }//GEN-LAST:event_btnSellActionPerformed
+    }//GEN-LAST:event_btnDeleteActionPerformed
 
     private void btnBackToMenuActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnBackToMenuActionPerformed
-        FrmHardwareStoreMenu frmHardwareStoreMenu;
-        frmHardwareStoreMenu = new FrmHardwareStoreMenu();
+        FrmHardwareStoreMenu1 frmHardwareStoreMenu;
+        frmHardwareStoreMenu = new FrmHardwareStoreMenu1();
         frmHardwareStoreMenu.setVisible(true);
         this.setVisible(false);
     }//GEN-LAST:event_btnBackToMenuActionPerformed
-
-    private void txtAmountActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtAmountActionPerformed
-        
-    }//GEN-LAST:event_txtAmountActionPerformed
 
     /**
      * @param args the command line arguments
@@ -210,18 +183,14 @@ public class FrmSellProduct extends javax.swing.JFrame {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(FrmSellProduct.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(FrmDeleteProduct1.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(FrmSellProduct.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(FrmDeleteProduct1.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(FrmSellProduct.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(FrmDeleteProduct1.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(FrmSellProduct.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(FrmDeleteProduct1.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
-        //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
         //</editor-fold>
         //</editor-fold>
         //</editor-fold>
@@ -230,19 +199,17 @@ public class FrmSellProduct extends javax.swing.JFrame {
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new FrmSellProduct().setVisible(true);
+                new FrmDeleteProduct1().setVisible(true);
             }
         });
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btnBackToMenu;
-    private javax.swing.JButton btnSell;
+    private javax.swing.JButton btnDelete;
     private javax.swing.JComboBox<String> comboBoxProducts;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JPanel jPanel1;
-    private javax.swing.JLabel lblAmount;
-    private javax.swing.JTextField txtAmount;
     // End of variables declaration//GEN-END:variables
 }

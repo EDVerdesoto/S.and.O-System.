@@ -21,7 +21,7 @@ import org.bson.codecs.pojo.PojoCodecProvider;
  *
  * @author Tipan Leonel, Code Warriors, DCCO-ESPE
  */
-public class FrmTableProduct extends javax.swing.JFrame {
+public class FrmTableProduct1 extends javax.swing.JFrame {
 
     public class centerFrame extends javax.swing.JFrame {
 
@@ -35,7 +35,7 @@ public class FrmTableProduct extends javax.swing.JFrame {
     /**
      * Creates new form FrmTableProduct
      */
-    public FrmTableProduct() {
+    public FrmTableProduct1() {
         initComponents();
         Connection.connectionDataBase();
         setLocationRelativeTo(null);
@@ -206,8 +206,8 @@ public class FrmTableProduct extends javax.swing.JFrame {
     }//GEN-LAST:event_btnPrintProductsActionPerformed
 
     private void btnBackActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnBackActionPerformed
-        FrmHardwareStoreMenu frmHardwareStoreMenu;
-        frmHardwareStoreMenu = new FrmHardwareStoreMenu();
+        FrmHardwareStoreMenu1 frmHardwareStoreMenu;
+        frmHardwareStoreMenu = new FrmHardwareStoreMenu1();
         frmHardwareStoreMenu.setVisible(true);
         this.setVisible(false);
     }//GEN-LAST:event_btnBackActionPerformed
@@ -229,21 +229,23 @@ public class FrmTableProduct extends javax.swing.JFrame {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(FrmTableProduct.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(FrmTableProduct1.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(FrmTableProduct.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(FrmTableProduct1.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(FrmTableProduct.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(FrmTableProduct1.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(FrmTableProduct.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(FrmTableProduct1.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
+        //</editor-fold>
+        //</editor-fold>
         //</editor-fold>
         //</editor-fold>
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new FrmTableProduct().setVisible(true);
+                new FrmTableProduct1().setVisible(true);
             }
         });
     }
