@@ -73,10 +73,10 @@ public class FrmLogin extends javax.swing.JFrame {
         Document doc = userController.read(userDoc);
         
         if (doc != null) {
-            FrmHardwareStoreMenu1 frmHardwareStoreMenu1 = new FrmHardwareStoreMenu1();
+            FrmHardwareStoreMenu1 frmHardwareStoreMenu = new FrmHardwareStoreMenu1();
             JOptionPane.showMessageDialog(null, "Bienvenido al sistema.");
             this.setVisible(false);
-            frmHardwareStoreMenu1.setVisible(true);
+            frmHardwareStoreMenu.setVisible(true);
             showAlertProducts();
         } else {
             JOptionPane.showMessageDialog(null, "Usuario o clave incorrectos, vuelva a intentar.");

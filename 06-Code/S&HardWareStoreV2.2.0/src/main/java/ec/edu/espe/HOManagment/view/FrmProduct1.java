@@ -12,7 +12,7 @@ import org.bson.Document;
  *
  * @author Code Warriors, DCCO-ESPE
  */
-public class FrmProduct extends javax.swing.JFrame {
+public class FrmProduct1 extends javax.swing.JFrame {
 
     public class centerFrame extends javax.swing.JFrame {
 
@@ -38,7 +38,7 @@ public class FrmProduct extends javax.swing.JFrame {
     /**
      * Creates new form FrmProduct
      */
-    public FrmProduct() {
+    public FrmProduct1() {
         initComponents();
         Connection.connectionDataBase();
         productController = new ProductController();
@@ -297,8 +297,8 @@ public class FrmProduct extends javax.swing.JFrame {
     }//GEN-LAST:event_btnAddProductActionPerformed
 
     private void btnBackToMenuActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnBackToMenuActionPerformed
-        FrmHardwareStoreMenu frmHardwareStoreMenu;
-        frmHardwareStoreMenu = new FrmHardwareStoreMenu();
+        FrmHardwareStoreMenu1 frmHardwareStoreMenu;
+        frmHardwareStoreMenu = new FrmHardwareStoreMenu1();
         frmHardwareStoreMenu.setVisible(true);
         this.setVisible(false);
     }//GEN-LAST:event_btnBackToMenuActionPerformed

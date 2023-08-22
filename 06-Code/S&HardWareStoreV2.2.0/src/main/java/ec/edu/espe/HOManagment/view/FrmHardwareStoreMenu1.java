@@ -59,6 +59,7 @@ public class FrmHardwareStoreMenu1 extends javax.swing.JFrame {
         itmProduct = new javax.swing.JMenuItem();
         jMenuItem2 = new javax.swing.JMenuItem();
         menuDeleteProduct = new javax.swing.JMenuItem();
+        jCheckBoxMenuItem1 = new javax.swing.JCheckBoxMenuItem();
         itmTableProduct = new javax.swing.JMenuItem();
         jMenu6 = new javax.swing.JMenu();
         itemAddSuppliers = new javax.swing.JMenuItem();
@@ -172,7 +173,17 @@ public class FrmHardwareStoreMenu1 extends javax.swing.JFrame {
         });
         jMenu4.add(menuDeleteProduct);
 
-        itmTableProduct.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_V, 0));
+        jCheckBoxMenuItem1.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_V, 0));
+        jCheckBoxMenuItem1.setSelected(true);
+        jCheckBoxMenuItem1.setText("Vender productos");
+        jCheckBoxMenuItem1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jCheckBoxMenuItem1ActionPerformed(evt);
+            }
+        });
+        jMenu4.add(jCheckBoxMenuItem1);
+
+        itmTableProduct.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_B, 0));
         itmTableProduct.setText("Tabla de productos");
         itmTableProduct.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -265,8 +276,8 @@ public class FrmHardwareStoreMenu1 extends javax.swing.JFrame {
     }//GEN-LAST:event_txtStylesActionPerformed
 
     private void itmProductActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_itmProductActionPerformed
-        FrmProduct frmProduct;
-        frmProduct = new FrmProduct();
+        FrmProduct1 frmProduct;
+        frmProduct = new FrmProduct1();
         frmProduct.setVisible(true);
         this.setVisible(false);
     }//GEN-LAST:event_itmProductActionPerformed
@@ -279,8 +290,8 @@ public class FrmHardwareStoreMenu1 extends javax.swing.JFrame {
     }//GEN-LAST:event_jMenuItem1ActionPerformed
 
     private void itmTableProductActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_itmTableProductActionPerformed
-        FrmTableProduct frmTableProduct;
-        frmTableProduct = new FrmTableProduct();
+        FrmTableProduct1 frmTableProduct;
+        frmTableProduct = new FrmTableProduct1();
         frmTableProduct.setVisible(true);
         this.setVisible(false);
     }//GEN-LAST:event_itmTableProductActionPerformed
@@ -341,15 +352,17 @@ public class FrmHardwareStoreMenu1 extends javax.swing.JFrame {
     }//GEN-LAST:event_menuDeleteCustomerActionPerformed
 
     private void jMenuItem2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem2ActionPerformed
-        FrmUpdateProduct frmUpdateProduct = new FrmUpdateProduct();
+        FrmUpdateProduct1 frmUpdateProduct = new FrmUpdateProduct1();
         frmUpdateProduct.setVisible(true);
         this.setVisible(false);
     }//GEN-LAST:event_jMenuItem2ActionPerformed
 
     private void menuDeleteProductActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_menuDeleteProductActionPerformed
-        FrmDeleteProduct frmDeleteProduct = new FrmDeleteProduct();
+        FrmDeleteProduct1 frmDeleteProduct = new FrmDeleteProduct1();
         frmDeleteProduct.setVisible(true);
         this.setVisible(false);
+
+
     }//GEN-LAST:event_menuDeleteProductActionPerformed
 
     private void jMenu5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenu5ActionPerformed
@@ -362,6 +375,12 @@ public class FrmHardwareStoreMenu1 extends javax.swing.JFrame {
         frmlHelp.setVisible(true);
         this.setVisible(false);
     }//GEN-LAST:event_jMenuItem4ActionPerformed
+
+    private void jCheckBoxMenuItem1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jCheckBoxMenuItem1ActionPerformed
+        FrmSellProduct1 frmSellProduct = new FrmSellProduct1();
+        frmSellProduct.setVisible(true);
+        this.setVisible(false);
+    }//GEN-LAST:event_jCheckBoxMenuItem1ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -437,6 +456,7 @@ public class FrmHardwareStoreMenu1 extends javax.swing.JFrame {
     private javax.swing.JMenuItem itmTableCustomer;
     private javax.swing.JMenuItem itmTableProduct;
     private javax.swing.JMenuItem itmTableSupllier;
+    private javax.swing.JCheckBoxMenuItem jCheckBoxMenuItem1;
     private javax.swing.JMenu jMenu1;
     private javax.swing.JMenu jMenu3;
     private javax.swing.JMenu jMenu4;

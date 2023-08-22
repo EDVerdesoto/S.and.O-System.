@@ -160,9 +160,9 @@ public class FrmDeleteProduct extends javax.swing.JFrame {
     }//GEN-LAST:event_btnDeleteActionPerformed
 
     private void btnBackToMenuActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnBackToMenuActionPerformed
-        FrmHardwareStoreMenu1 frmStylesirelia;
-        frmStylesirelia = new FrmHardwareStoreMenu1();
-        frmStylesirelia.setVisible(true);
+        FrmHardwareStoreMenu frmHardwareStoreMenu;
+        frmHardwareStoreMenu = new FrmHardwareStoreMenu();
+        frmHardwareStoreMenu.setVisible(true);
         this.setVisible(false);
     }//GEN-LAST:event_btnBackToMenuActionPerformed
 
