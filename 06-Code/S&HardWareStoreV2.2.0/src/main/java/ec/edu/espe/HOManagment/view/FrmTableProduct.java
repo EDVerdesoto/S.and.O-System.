@@ -5,6 +5,7 @@ import com.mongodb.MongoClientSettings;
 import com.mongodb.client.MongoCollection;
 import com.mongodb.client.MongoDatabase;
 import ec.edu.espe.HOManagment.controller.Connection;
+import ec.edu.espe.HOManagment.controller.ProductController;
 import ec.edu.espe.HOManagment.model.Product;
 import java.util.ArrayList;
 import java.util.List;
@@ -43,7 +44,7 @@ public class FrmTableProduct extends javax.swing.JFrame {
 
     public void loadProductsTable() {
         
-        
+        ProductController pc = new ProductController();
         CodecRegistry codecRegistry = MongoClientSettings.getDefaultCodecRegistry();
         codecRegistry = fromRegistries(codecRegistry, fromProviders(PojoCodecProvider.builder().automatic(true).build()));
 
@@ -58,7 +59,7 @@ public class FrmTableProduct extends javax.swing.JFrame {
             objects[i][1] = products.get(i).getIncome();
             objects[i][2] = products.get(i).getPrice();
             objects[i][3] = products.get(i).getStock();
-            objects[i][4] = products.get(i).getRevenue();
+            objects[i][4] = pc.calculateRevenue(products.get(i).getPrice());
             
             tableProducts.setModel(new javax.swing.table.DefaultTableModel(
                     objects,

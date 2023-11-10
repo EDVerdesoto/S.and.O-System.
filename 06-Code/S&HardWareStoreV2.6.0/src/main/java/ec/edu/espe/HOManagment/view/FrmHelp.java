@@ -42,28 +42,35 @@ public class FrmHelp extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        txtSupport.setBackground(new java.awt.Color(105, 145, 172));
+        jPanel1.setBackground(new java.awt.Color(255, 255, 255));
+
+        txtSupport.setEditable(false);
         txtSupport.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
         txtSupport.setForeground(new java.awt.Color(0, 51, 51));
         txtSupport.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         txtSupport.setText("SOPORTE TÉCNICO:");
 
-        txtEdison.setBackground(new java.awt.Color(105, 145, 172));
+        txtEdison.setEditable(false);
         txtEdison.setForeground(new java.awt.Color(0, 51, 51));
         txtEdison.setText("Edison Verdesoto");
 
-        txtMail.setBackground(new java.awt.Color(105, 145, 172));
+        txtMail.setEditable(false);
         txtMail.setForeground(new java.awt.Color(0, 51, 51));
         txtMail.setText("Correo: edisondamian12@gmail.com");
 
-        txtNumber.setBackground(new java.awt.Color(105, 145, 172));
+        txtNumber.setEditable(false);
         txtNumber.setForeground(new java.awt.Color(0, 51, 51));
         txtNumber.setText("Whatsapp: 0998621890");
+        txtNumber.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtNumberActionPerformed(evt);
+            }
+        });
 
-        txtNumberTipan.setBackground(new java.awt.Color(105, 145, 172));
+        txtNumberTipan.setEditable(false);
         txtNumberTipan.setText("0996212323");
 
-        txtMailTipan.setBackground(new java.awt.Color(105, 145, 172));
+        txtMailTipan.setEditable(false);
         txtMailTipan.setText("leonel06tipan@gmail.com");
         txtMailTipan.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -71,7 +78,7 @@ public class FrmHelp extends javax.swing.JFrame {
             }
         });
 
-        txtLeonel.setBackground(new java.awt.Color(105, 145, 172));
+        txtLeonel.setEditable(false);
         txtLeonel.setForeground(new java.awt.Color(0, 51, 51));
         txtLeonel.setText("Leonel Tipan");
 
@@ -99,7 +106,7 @@ public class FrmHelp extends javax.swing.JFrame {
                         .addGap(38, 38, 38)
                         .addComponent(txtMailTipan, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGap(100, 100, 100)
+                        .addGap(93, 93, 93)
                         .addComponent(txtSupport, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGap(30, 30, 30)
@@ -137,22 +144,15 @@ public class FrmHelp extends javax.swing.JFrame {
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(37, 37, 37))
+            .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+            .addComponent(jPanel1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
-
-    private void txtMailTipanActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtMailTipanActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_txtMailTipanActionPerformed
 
     private void txtOK1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtOK1ActionPerformed
         FrmHardwareStoreMenu1 frmHardwareStoreMenu;
@@ -160,6 +160,14 @@ public class FrmHelp extends javax.swing.JFrame {
         frmHardwareStoreMenu.setVisible(true);
         this.setVisible(false);
     }//GEN-LAST:event_txtOK1ActionPerformed
+
+    private void txtMailTipanActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtMailTipanActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txtMailTipanActionPerformed
+
+    private void txtNumberActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtNumberActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txtNumberActionPerformed
 
     /**
      * @param args the command line arguments

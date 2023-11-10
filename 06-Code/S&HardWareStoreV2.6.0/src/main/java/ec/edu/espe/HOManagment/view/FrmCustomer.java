@@ -79,6 +79,8 @@ public class FrmCustomer extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
+        jPanel1.setBackground(new java.awt.Color(255, 255, 255));
+
         jLabel47.setForeground(new java.awt.Color(0, 51, 51));
         jLabel47.setText("Falta Pagar");
 
@@ -142,6 +144,7 @@ public class FrmCustomer extends javax.swing.JFrame {
             }
         });
 
+        txtDateService.setBackground(new java.awt.Color(255, 255, 255));
         txtDateService.setMinSelectableDate(new java.util.Date(1658210469000L));
 
         btnAdd.setText("Crear");

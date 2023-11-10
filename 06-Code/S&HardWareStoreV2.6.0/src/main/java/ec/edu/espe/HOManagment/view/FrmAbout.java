@@ -61,12 +61,14 @@ public class FrmAbout extends javax.swing.JFrame {
             }
         });
 
+        txtCredits.setEditable(false);
         txtCredits.setFont(new java.awt.Font("Mongolian Baiti", 0, 18)); // NOI18N
         txtCredits.setForeground(new java.awt.Color(0, 51, 51));
         txtCredits.setText("Este software fue desarrollado por el equipo Code Warrios, programadores de la Universidad de las Fuerzas Armadas ESPE. Con la tutela de pHD Edison Lascano. ");
         txtCredits.setCaretColor(new java.awt.Color(255, 255, 255));
         jScrollPane1.setViewportView(txtCredits);
 
+        jTextField1.setEditable(false);
         jTextField1.setFont(new java.awt.Font("Microsoft YaHei", 1, 12)); // NOI18N
         jTextField1.setForeground(new java.awt.Color(0, 51, 51));
         jTextField1.setHorizontalAlignment(javax.swing.JTextField.CENTER);
@@ -111,8 +113,8 @@ public class FrmAbout extends javax.swing.JFrame {
                 .addGap(16, 16, 16)
                 .addComponent(txtTitle, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
-                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(32, 32, 32)
+                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 114, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
                 .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(31, 31, 31)
                 .addComponent(txtOK, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)

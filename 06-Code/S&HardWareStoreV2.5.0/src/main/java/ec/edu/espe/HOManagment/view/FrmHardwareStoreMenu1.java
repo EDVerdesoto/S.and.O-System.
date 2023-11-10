@@ -1,8 +1,7 @@
 package ec.edu.espe.HOManagment.view;
 
 import ec.edu.espe.HOManagment.controller.Connection;
-import java.awt.Image;
-import java.awt.Toolkit;
+
 
 /**
  *
@@ -18,13 +17,6 @@ public class FrmHardwareStoreMenu1 extends javax.swing.JFrame {
             setLocationRelativeTo(null);
         }
     }
-
-    @Override
-    public Image getIconImage() {
-        Image retValue = Toolkit.getDefaultToolkit().getImage(ClassLoader.getSystemResource("images/menu_bg.png"));
-        return retValue;
-    }
-
     /**
      * Creates new form frmStylesirelia
      */
@@ -83,7 +75,7 @@ public class FrmHardwareStoreMenu1 extends javax.swing.JFrame {
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 358, Short.MAX_VALUE)
+            .addGap(0, 351, Short.MAX_VALUE)
         );
 
         txtStyles.setText("S&O Ferretería");

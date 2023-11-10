@@ -11,22 +11,22 @@ public class Supplier {
     private String number;
     private double pendingPayment;
     private String address;
-    private String invoiceNumber;
+
 
     public Supplier() {
     }
 
-    public Supplier(String name, String number, double pendingPayment, String address, String invoiceNumber) {
+    public Supplier(String name, String number, double pendingPayment, String address) {
         this.name = name;
         this.number = number;
         this.pendingPayment = pendingPayment;
         this.address = address;
-        this.invoiceNumber= invoiceNumber;
+    
     }
 
     @Override
     public String toString() {
-        return "Supplier{" + "name=" + name + ", number=" + number + ", pendingPayment=" + pendingPayment  + ", address=" + address + ",Invoice Number="+ invoiceNumber+'}';
+        return "Supplier{" + "name=" + name + ", number=" + number + ", pendingPayment=" + pendingPayment  + ", address=" + address +'}';
     }
 
     /**
@@ -85,19 +85,5 @@ public class Supplier {
         this.address = address;
     }
     
-    /**
-     * @return the invoiceNumber
-     */
-    public String getinvoiceNumber() {
-        return invoiceNumber;
-    }
-
-    /**
-     * 
-     * @param invoiceNumber the invoiceNumber to set
-     */
-    public void setinvoiceNumber(String invoiceNumber) {
-        this.invoiceNumber = invoiceNumber;
-    }
 
 }

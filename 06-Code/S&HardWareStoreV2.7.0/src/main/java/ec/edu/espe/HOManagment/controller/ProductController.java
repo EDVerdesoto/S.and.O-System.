@@ -33,6 +33,7 @@ public class ProductController extends BasicController<Product> {
     }
 
     public double calculateRevenue(double price) {
+        
         double newPrice = price * revenuePercentage;
         return Decimals.roundToTwoTenths(newPrice);
     }

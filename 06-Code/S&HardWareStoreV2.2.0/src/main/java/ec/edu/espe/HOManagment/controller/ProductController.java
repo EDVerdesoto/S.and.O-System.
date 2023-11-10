@@ -28,7 +28,7 @@ public class ProductController extends BasicController<Product> {
                 append("price", product.getPrice()).
                 append("income", product.getIncome()).
                 append("stock", product.getStock()).
-                append("PVP", product.getRevenue());
+                append("PVP", calculateRevenue(product.getPrice()));
         return document;
     }
 

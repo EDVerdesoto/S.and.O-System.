@@ -23,8 +23,7 @@ public class SupplierController extends BasicController<Supplier> {
         document.append("number", supplier.getNumber()).
                 append("name", supplier.getName()).
                 append("pendingPayment", supplier.getPendingPayment()).
-                append("address", supplier.getAddress()).
-                append("invoiceNumber", supplier.getinvoiceNumber());
+                append("address", supplier.getAddress());
 
         return document;
     }

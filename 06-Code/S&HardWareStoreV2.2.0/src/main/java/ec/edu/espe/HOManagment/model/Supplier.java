@@ -94,7 +94,7 @@ public class Supplier {
 
     /**
      * 
-     * @param invoiceNumber
+     * @param invoiceNumber the invoiceNumber to set
      */
     public void setinvoiceNumber(String invoiceNumber) {
         this.invoiceNumber = invoiceNumber;

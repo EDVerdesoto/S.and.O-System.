@@ -41,6 +41,7 @@ public class FrmTableSupplier extends javax.swing.JFrame {
     public FrmTableSupplier() {
         initComponents();
         Connection.connectionDataBase();
+        setLocationRelativeTo(null);
     }
 
     public void loadSuppliersTable() {
@@ -58,14 +59,15 @@ public class FrmTableSupplier extends javax.swing.JFrame {
             objects[i][0] = suppliers.get(i).getName();
             objects[i][1] = suppliers.get(i).getNumber();
             objects[i][2] = suppliers.get(i).getPendingPayment();
-            objects[i][3] = suppliers.get(i).getAddress();
-            objects[i][4] = suppliers.get(i).getinvoiceNumber();
+            objects[i][3] = suppliers.get(i).getinvoiceNumber();
+            objects[i][4] = suppliers.get(i).getAddress();
         }
+
 
         tableSuppliers.setModel(new javax.swing.table.DefaultTableModel(
             objects,
             new String[]{
-                "Nombre", "Número", "Pago", "Dirección", "Número de Factura"
+                "Nombre", "Número", "Pago", "Número de Factura", "Dirección"
             }
         ));
     }
@@ -107,7 +109,7 @@ public class FrmTableSupplier extends javax.swing.JFrame {
 
         tableSuppliers.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
-                {null, null, null, null, null},
+                {null, null,  new Boolean(false), null, null},
                 {null, null, null, null, null},
                 {null, null, null, null, null},
                 {null, null, null, null, null},
@@ -126,7 +128,7 @@ public class FrmTableSupplier extends javax.swing.JFrame {
             }
         ) {
             Class[] types = new Class [] {
-                java.lang.String.class, java.lang.Integer.class, java.lang.Boolean.class, java.lang.String.class, java.lang.String.class
+                java.lang.String.class, java.lang.Integer.class, java.lang.Boolean.class, java.lang.Object.class, java.lang.String.class
             };
 
             public Class getColumnClass(int columnIndex) {
